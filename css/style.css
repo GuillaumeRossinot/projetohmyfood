@@ -1,9 +1,89 @@
-/*logo*/
+/* header */
 
-img {
-    width: 1200px;
+header {
+    background-color: #579C87;
     height: 200px;
     display: block;
+}
+
+header img {
+    width: 400px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.prochainement {
+    display: block;
+    background-color: #579C87;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+    color: #FDCB46;
+    border-radius: 10px;
+}
+
+.blockmenu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.blockmenu img {
+    border: 1px solid #aaa;
+    width: 500px;
+    height: 700px;
+    margin-right: 90px;
+    margin-top: 90px;
+    margin-left: 90px;
+    box-shadow: 8px 8px 12px #aaa;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #579C87;
+    height: 100px;
+    width: auto;
+}
+
+.lienfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentionslegales {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.mentionslegales a {
+    text-decoration: none;
+    color: #FDCB46;
+}
+
+.contact {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #FDCB46;
 }

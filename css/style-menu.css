@@ -1,0 +1,19 @@
+/* nom du restaurant */
+
+.nomrestaurant {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Verdana;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.imagemenu img {
+    border: 1px solid #aaa;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    box-shadow: 8px 8px 12px #aaa;
+}
