@@ -1,3 +1,35 @@
+/* fonts */
+
+@font-face {
+    font-family: "devonshire";
+    src: url("../fonts/devonshire-regular.ttf");
+}
+
+@font-face {
+    font-family: "segoe";
+    src: url("../fonts/segoeprb.ttf");
+}
+
+@font-face {
+    font-family: "croissant";
+    src: url("../fonts/croissantone-regular.ttf");
+}
+
+@font-face {
+    font-family: "ttpub";
+    src: url("../fonts/TTPubs-DemiBold.ttf");
+}
+
+@font-face {
+    font-family: "rusulica";
+    src: url("../fonts/RusulicaAntique.ttf");
+}
+
+@font-face {
+    font-family: "breesh";
+    src: url("../fonts/BreeshRegular.otf");
+}
+
 /* header */
 
 header {
@@ -22,6 +54,117 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.blockmenu {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lanotesenchanteeblock {
+    border: 1px solid #aaa;
+    width: 800px;
+    height: 1000px;
+    box-shadow: 8px 8px 12px #aaa;
+    background-color: #FCDFDB;
+}
+
+.lanotesenchanteeblock img {
+    margin-top: 300px;
+    height: 80px;
+}
+
+.notefonttitre {
+    font-family: "devonshire";
+    color: #3D1319;
+    font-size: 70px;
+}
+
+.notefontmenu {
+    font-family: "segoe";
+    color: #3D1319;
+    font-size: 70px;
+}
+
+.lechicalafrançaiseblock {
+    border: 1px solid #aaa;
+    width: 800px;
+    height: 1000px;
+    text-align: center;
+    box-shadow: 8px 8px 12px #aaa;
+    background-color: #FFF5FE;
+}
+
+.chicfonttitre {
+    font-family: "croissant";
+    font-size: 50px;
+    margin-top: 450px;
+    background: linear-gradient(to right, #E38A12 0%, #8F5AFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.chicfontmenu {
+    font-family: "ttpub";
+    color: #C77412;
+    font-size: 70px;
+}
+
+
+.ledelicedespapillesblock {
+    border: 1px solid #aaa;
+    width: 800px;
+    height: 1000px;
+    text-align: center;
+    box-shadow: 8px 8px 12px #aaa;
+    background-color: #EDEFEF;
+}
+
+.delicefonttitre {
+    font-family: "rusulica";
+    font-size: 70px;
+    margin-top: 450px;
+    background: linear-gradient(to right, #0823FB 0%, #229DF9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delicefontmenu {
+    font-family: "segoe";
+    color: #0823FB;
+    font-size: 70px;
+}
+
+
+.lapalettedugoutblock {
+    border: 1px solid #aaa;
+    width: 800px;
+    height: 1000px;
+    box-shadow: 8px 8px 12px #aaa;
+    background-color: #FDFFFD;
+}
+
+.palettefonttitre {
+    font-family: "breesh";
+    font-size: 70px;
+    margin-top: 450px;
+    background: linear-gradient(to right, #3E923A 0%, #BEFF7F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.palettefontmenu {
+    font-family: "segoe";
+    color: #72BF56;
+    font-size: 70px;
+}
+
 .prochainement {
     display: block;
     background-color: #579C87;
@@ -36,22 +179,36 @@ body {
     border-radius: 10px;
 }
 
-.blockmenu {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
+/*animation point */
+
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
 }
 
-.blockmenu img {
-    border: 1px solid #aaa;
-    width: 500px;
-    height: 700px;
-    margin-right: 90px;
-    margin-top: 90px;
-    margin-left: 90px;
-    box-shadow: 8px 8px 12px #aaa;
+.prochainement span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
+.prochainement span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.prochainement span:nth-child(3) {
+    animation-delay: .4s;
+}
 
 /* footer */
 
@@ -65,23 +222,6 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-/* .mentionslegales {
-    font-size: 45px;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-.mentionslegales a {
-    text-decoration: none;
-    color: #FDCB46;
-} */
-
-/* .contact {
-    font-size: 45px;
-    margin-top: 20px;
-    margin-right: 40px;
-} */
 
 .contact {
     background-color: #579C87;
