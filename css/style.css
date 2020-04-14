@@ -75,9 +75,15 @@ a {
     background-color: #FCDFDB;
 }
 
-.lanotesenchanteeblock img {
+.lanotesenchanteeblock i {
+    color: #3fbac4;
+    font-size: 70px;
+    padding-right: 10px;
     margin-top: 300px;
     height: 80px;
+    background: linear-gradient(to right, #F0525B 0%, #F6916A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .notefonttitre {
@@ -91,6 +97,21 @@ a {
     color: #3D1319;
     font-size: 70px;
 }
+
+/* Dézoomer*/
+.anim {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.anim:hover {
+    -webkit-transform: scale(0.90);
+    transform: scale(0.90);
+}
+
+/* chic */
 
 .lechicalafrançaiseblock {
     border: 1px solid #aaa;
@@ -117,6 +138,8 @@ a {
 }
 
 
+/* delice */
+
 .ledelicedespapillesblock {
     border: 1px solid #aaa;
     width: 800px;
@@ -141,6 +164,7 @@ a {
     font-size: 70px;
 }
 
+/* palette */
 
 .lapalettedugoutblock {
     border: 1px solid #aaa;
@@ -165,6 +189,7 @@ a {
     font-size: 70px;
 }
 
+
 .prochainement {
     display: block;
     background-color: #579C87;
@@ -177,6 +202,7 @@ a {
     font-size: 45px;
     color: #FDCB46;
     border-radius: 10px;
+    margin-bottom: 150px;
 }
 
 /*animation point */
@@ -215,7 +241,10 @@ a {
 footer {
     background-color: #579C87;
     height: 100px;
-    width: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .lienfooter {
@@ -281,4 +310,231 @@ footer {
     100% {
         transform: translate(2px, 0);
     }
+}
+
+.mentionslegalespage {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+/* Responsive */
+
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+    /* header */
+
+    header {
+        background-color: #579C87;
+        height: 200px;
+        width: 780px;
+        display: block;
+    }
+
+    .blockmenu {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        margin-left: 100px;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .lanotesenchanteeblock {
+        margin-bottom: 100px;
+        width: 600px;
+        height: 1000px;
+    }
+
+    .notefonttitre {
+        font-size: 50px;
+    }
+
+    .notefontmenu {
+        font-size: 50px;
+    }
+
+    .lechicalafrançaiseblock {
+        width: 600px;
+        height: 1000px;
+    }
+
+    .chicfonttitre {
+        font-size: 30px;
+    }
+
+    .chicfontmenu {
+        font-size: 50px;
+    }
+
+    .lapalettedugoutblock {
+        width: 600px;
+        height: 1000px;
+    }
+
+    .palettefonttitre {
+        font-size: 50px;
+    }
+
+    .palettefontmenu {
+        font-size: 50px;
+    }
+
+    .ledelicedespapillesblock {
+        margin-bottom: 100px;
+        width: 600px;
+        height: 1000px;
+    }
+
+    .delicefonttitre {
+        font-size: 50px;
+    }
+
+    .delicefontmenu {
+        font-size: 50px;
+    }
+
+    .contact {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .mentionslegales {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 579px) {
+
+    /* header */
+
+    header {
+        background-color: #579C87;
+        height: 200px;
+        width: 425px;
+        display: block;
+    }
+
+    header img {
+        width: 200px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 50px;
+    }
+
+    .blockmenu {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .lanotesenchanteeblock {
+        margin-bottom: 100px;
+        margin-left: 40px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .lanotesenchanteeblock i {
+        font-size: 50px;
+        margin-top: 150px;
+    }
+
+    .notefonttitre {
+        font-size: 30px;
+    }
+
+    .notefontmenu {
+        font-size: 30px;
+    }
+
+    .lechicalafrançaiseblock {
+        width: 350px;
+        margin-left: 40px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .chicfonttitre {
+        font-size: 20px;
+        margin-top: 180px;
+    }
+
+    .chicfontmenu {
+        font-size: 30px;
+    }
+
+    .lapalettedugoutblock {
+        width: 350px;
+        margin-left: 40px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .palettefonttitre {
+        font-size: 30px;
+        margin-top: 180px;
+    }
+
+    .palettefontmenu {
+        font-size: 30px;
+    }
+
+    .ledelicedespapillesblock {
+        margin-bottom: 100px;
+        width: 350px;
+        margin-left: 40px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .delicefonttitre {
+        font-size: 30px;
+        margin-top: 180px;
+    }
+
+    .delicefontmenu {
+        font-size: 30px;
+    }
+
+    .prochainement {
+        width: 200px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+
+    .footer {
+        width: 425px;
+    }
+
+    .contact {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .mentionslegales {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .prochainement {
+        width: 200px;
+        height: 40px;
+        margin-left: 125px;
+        margin-right: auto;
+        font-size: 25px;
+    }
+
 }

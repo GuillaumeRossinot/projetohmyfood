@@ -98,3 +98,70 @@
     flex-direction: column;
 
 }
+
+/* Responsive */
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+    .menu {
+        width: 500px;
+        height: 1100px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titre img {
+        text-align: center;
+        width: 100px;
+        height: 17px;
+        margin-top: 15px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 579px) {
+    .menu {
+        width: 350px;
+        height: 1100px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nomrestaurant {
+        font-size: 25px;
+    }
+
+    .titrehaut {
+        font-size: 25px;
+    }
+
+    .titre {
+        font-size: 17px;
+    }
+
+    .titre img {
+        text-align: center;
+        width: 50px;
+        height: 17px;
+        margin-top: 15px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .prix {
+        text-align: right;
+        font-family: "devonshire";
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+}

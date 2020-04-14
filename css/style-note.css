@@ -20,7 +20,7 @@
     box-shadow: 8px 8px 12px #aaa;
     background-color: #FCDFDB;
     margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,8 +34,12 @@
     font-size: 45px;
 }
 
-.titrehaut img {
+.titrehaut i {
     height: 80px;
+    font-size: 70px;
+    background: linear-gradient(to right, #F0525B 0%, #F6916A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 
 .entree {
@@ -105,6 +109,72 @@
     font-size: 45px;
 }
 
-.titrebas img {
+.titrebas i {
     height: 50px;
+    background: linear-gradient(to right, #F0525B 0%, #F6916A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+/* Responsive */
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+    .menu {
+        width: 500px;
+        height: 1300px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titre img {
+        text-align: center;
+        width: 100px;
+        height: 17px;
+        margin-top: 15px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 579px) {
+    .menu {
+        width: 350px;
+        height: 1400px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nomrestaurant {
+        font-size: 25px;
+    }
+
+    .titre {
+        font-size: 17px;
+    }
+
+    .titre img {
+        text-align: center;
+        width: 50px;
+        height: 17px;
+        margin-top: 15px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .prix {
+        text-align: right;
+        font-family: "devonshire";
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
 }
