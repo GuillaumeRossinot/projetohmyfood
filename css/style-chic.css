@@ -16,11 +16,11 @@
 .menu {
     border: 1px solid #aaa;
     width: 800px;
-    height: 1100px;
+    height: 1000px;
     box-shadow: 8px 8px 12px #aaa;
     background-color: #FFF5FE;
     margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
 }
