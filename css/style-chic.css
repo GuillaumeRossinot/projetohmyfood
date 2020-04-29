@@ -59,6 +59,28 @@
     color: #C67412;
 }
 
+.titre {
+    position: relative;
+}
+
+.titre:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.titre:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
 .titreentree img {
     text-align: center;
     width: 182px;
