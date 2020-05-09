@@ -25,7 +25,7 @@
     margin-right: auto;
 }
 
-.titrehaut {
+h1 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -33,10 +33,10 @@
     font-size: 45px;
     background: linear-gradient(to right, #3E923A 0%, #BEFF7F 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
-.titrehaut img {
+h1 img {
     height: 80px;
 }
 
@@ -57,11 +57,13 @@
     font-size: 25px;
 }
 
-.titremenu {
+h2 {
     position: relative;
+    margin: 0;
+    font-size: 25px;
 }
 
-.titremenu:before {
+h2:before {
     content: "";
     position: absolute;
     width: 0;
@@ -73,7 +75,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.titremenu:hover:before {
+h2:hover:before {
     visibility: visible;
     width: 100%;
 }

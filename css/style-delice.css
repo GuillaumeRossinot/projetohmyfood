@@ -57,11 +57,13 @@
     font-size: 25px;
 }
 
-.titremenu {
+h2 {
     position: relative;
+    margin: 0;
+    font-size: 20px;
 }
 
-.titremenu:before {
+h2:before {
     content: "";
     position: absolute;
     width: 0;
@@ -73,7 +75,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.titremenu:hover:before {
+h2:hover:before {
     visibility: visible;
     width: 100%;
 }

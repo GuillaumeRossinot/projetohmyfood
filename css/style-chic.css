@@ -59,23 +59,25 @@
     color: #C67412;
 }
 
-.titre {
+.titreentree h2 {
     position: relative;
+    margin: 0;
+    font-size: 20px;
 }
 
-.titre:before {
+.titreentree h2:before {
     content: "";
     position: absolute;
     width: 0;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: #C67412;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 
-.titre:hover:before {
+.titreentree h2:hover:before {
     visibility: visible;
     width: 100%;
 }
@@ -104,6 +106,29 @@
     margin-top: 15px;
 }
 
+.titreplat h2 {
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+}
+
+.titreplat h2:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #A56799;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.titreplat h2:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
 .titredessert {
     text-align: center;
     display: flex;
@@ -118,6 +143,29 @@
     width: 200px;
     height: 17px;
     margin-top: 15px;
+}
+
+.titredessert h2 {
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+}
+
+.titredessert h2:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6E4CCC;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.titredessert h2:hover:before {
+    visibility: visible;
+    width: 100%;
 }
 
 .desc {
