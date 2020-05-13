@@ -52,6 +52,7 @@ header img {
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -110,9 +111,10 @@ a {
     transition: .3s ease-in-out;
 }
 
-.anim:hover {
+.anim:hover div {
     -webkit-transform: scale(0.90);
-    transform: scale(0.90);
+    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 /* chic */
