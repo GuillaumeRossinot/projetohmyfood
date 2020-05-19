@@ -150,7 +150,7 @@ h2:hover:before {
 @media screen and (max-width: 579px) {
     .menu {
         width: 350px;
-        height: 1100px;
+        height: 1200px;
         margin-top: 100px;
         margin-bottom: 150px;
         margin-left: auto;
@@ -161,12 +161,12 @@ h2:hover:before {
         font-size: 25px;
     }
 
-    .titrehaut {
+    h1 {
         font-size: 25px;
     }
 
-    .titre {
-        font-size: 17px;
+    h2 {
+        font-size: 15px;
     }
 
     .titre img {
@@ -178,10 +178,12 @@ h2:hover:before {
 
     .desc {
         font-size: 12px;
+        text-align: center;
+        display: inline-block;
     }
 
     .prix {
-        text-align: right;
+        text-align: center;
         font-family: "devonshire";
         font-size: 20px;
         margin-left: 10px;
